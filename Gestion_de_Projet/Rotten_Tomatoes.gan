@@ -1,22 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Rotten Tomatoes" company="Central Statistical Office of Breizhmeiz" webLink="" view-date="2022-03-08" view-index="1" gantt-divider-location="595" resource-divider-location="454" version="3.2.3220" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Rotten Tomatoes" company="Central Statistical Office of Breizhmeiz" webLink="" view-date="2022-03-06" view-index="0" gantt-divider-location="614" resource-divider-location="454" version="3.2.3230" locale="fr_FR">
     <description>
         <![CDATA[Analyse de Données]]>
     </description>
     <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="200" order="0"/>
-        <field id="tpd13" name="Ressources" width="96" order="1"/>
-        <field id="tpd7" name="Avancée" width="78" order="2"/>
-        <field id="tpd12" name="Coût" width="52" order="3"/>
-        <field id="tpd5" name="Date de fin" width="168" order="4"/>
+        <field id="tpd3" name="Nom" width="179" order="0"/>
+        <field id="tpd13" name="Ressources" width="85" order="1"/>
+        <field id="tpd4" name="Date de début" width="66" order="2"/>
+        <field id="tpd7" name="Avancée" width="69" order="3"/>
+        <field id="tpd12" name="Coût" width="46" order="4"/>
+        <field id="tpd5" name="Date de fin" width="150" order="5"/>
+        <field id="tpd2" name="Alertes" width="-1" order="6"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelDown" value="resources"/>
         <option id="taskLabelLeft" value="length"/>
-        <option id="taskLabelRight" value="advancement"/>
         <option id="filter.completedTasks" value="false"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="287" order="0"/>
-        <field id="1" name="Rôle par défaut" width="163" order="1"/>
+        <field id="0" name="Nom" width="277" order="0"/>
+        <field id="1" name="Rôle par défaut" width="158" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -165,22 +166,36 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Analyse préliminaire" color="#8cb6ce" meeting="false" start="2022-03-11" duration="1" complete="50" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true">
-            <depend id="1" type="2" difference="0" hardness="Strong"/>
-            <depend id="2" type="1" difference="0" hardness="Strong"/>
+        <task id="12" name="Projet Rotten Tomatoes" meeting="false" start="2022-03-11" duration="3" complete="83" expand="true">
+            <task id="6" name="Base de Donnée" color="#8cb6ce" meeting="true" start="2022-03-17" duration="0" complete="100" thirdDate="2022-03-17" thirdDate-constraint="0" priority="4" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="Analyse" color="#8cb6ce" meeting="false" start="2022-03-11" duration="3" complete="87" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
+                <task id="0" name="Analyse préliminaire" color="#8cb6ce" meeting="false" start="2022-03-11" duration="1" complete="100" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true">
+                    <depend id="1" type="2" difference="0" hardness="Strong"/>
+                    <depend id="2" type="1" difference="0" hardness="Strong"/>
+                </task>
+                <task id="4" name="Analyse Détaillée" color="#8cb6ce" meeting="false" start="2022-03-17" duration="1" complete="75" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="8" name="Base de Données" color="#8cb6ce" meeting="false" start="2022-03-14" duration="2" complete="82" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
+                <task id="1" name="Modélisation BDD" color="#8cb6ce" meeting="false" start="2022-03-14" duration="1" complete="90" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true">
+                    <depend id="6" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="5" name="Script d'import" color="#8cb6ce" meeting="false" start="2022-03-17" duration="1" complete="75" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="7" name="Documentation" color="#8cb6ce" meeting="false" start="2022-03-11" duration="3" complete="81" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
+                <task id="2" name="Rédaction CdC" color="#8cb6ce" meeting="false" start="2022-03-11" duration="3" complete="100" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true">
+                    <depend id="3" type="3" difference="0" hardness="Strong"/>
+                    <depend id="10" type="1" difference="1" hardness="Rubber"/>
+                </task>
+                <task id="10" name="Gantt" color="#8cb6ce" meeting="false" start="2022-03-14" duration="1" complete="90" thirdDate="2022-03-14" thirdDate-constraint="1" expand="true">
+                    <depend id="11" type="4" difference="1" hardness="Strong"/>
+                </task>
+                <task id="11" name="Budget Prévisionnel" color="#8cb6ce" meeting="false" start="2022-03-14" duration="1" complete="100" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
+                <task id="3" name="Rédaction Devis" color="#8cb6ce" meeting="false" start="2022-03-17" duration="1" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+            </task>
         </task>
-        <task id="1" name="Modélisation BDD" color="#8cb6ce" meeting="false" start="2022-03-14" duration="1" complete="90" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
-        <task id="6" name="Base de Donnée" color="#8cb6ce" meeting="true" start="2022-03-17" duration="0" complete="100" thirdDate="2022-03-17" thirdDate-constraint="0" priority="4" expand="true">
-            <depend id="1" type="3" difference="0" hardness="Strong"/>
-            <depend id="4" type="2" difference="0" hardness="Strong"/>
-            <depend id="5" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="5" name="Script d'import" color="#8cb6ce" meeting="false" start="2022-03-17" duration="1" complete="50" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
-        <task id="4" name="Analyse Détaillée" color="#8cb6ce" meeting="false" start="2022-03-17" duration="1" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
-        <task id="2" name="Rédaction CdC" color="#8cb6ce" meeting="false" start="2022-03-11" duration="5" complete="80" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true">
-            <depend id="3" type="3" difference="0" hardness="Strong"/>
-        </task>
-        <task id="3" name="Rédaction Devis" color="#8cb6ce" meeting="false" start="2022-03-21" duration="1" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Romain" function="SoftwareDevelopment:2" contacts="" phone="">
@@ -194,15 +209,21 @@
         </resource>
     </resources>
     <allocations>
-        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="60.0"/>
         <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="30.0"/>
         <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="30.0"/>
         <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="25.0"/>
-        <allocation task-id="0" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
-        <allocation task-id="1" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="30.0"/>
+        <allocation task-id="5" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="30.0"/>
+        <allocation task-id="11" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="30.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:1" responsible="true" load="30.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:1" responsible="true" load="60.0"/>
         <allocation task-id="6" resource-id="1" function="Default:1" responsible="true" load="25.0"/>
-        <allocation task-id="1" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="30.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="30.0"/>
+        <allocation task-id="1" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="60.0"/>
         <allocation task-id="6" resource-id="2" function="SoftwareDevelopment:8" responsible="true" load="25.0"/>
+        <allocation task-id="4" resource-id="2" function="SoftwareDevelopment:10" responsible="false" load="30.0"/>
     </allocations>
     <vacations/>
     <previous/>
