@@ -18,7 +18,7 @@ L'avancement du projet est suivit grâce à un tableau de Gantt, reprenant les t
 
 [Rapport complet](Gestion_de_Projet/Gantt-Rotten_Tomatoes.pdf) à date, à destination du comité de pilotage du projet.
 
-### Suivi financier
+### Budger Prévisionnel
 
 ![Budget prévisionnel](Gestion_de_Projet/Previsionnel.png)
 
@@ -26,11 +26,11 @@ L'avancement du projet est suivit grâce à un tableau de Gantt, reprenant les t
 
 Un [cahier des Charges](cahier_des_charges.pdf) Version Client, prêt à être signé.
 
+![Gantt](Gestion_de_Projet/Gantt-Client.png)
+
 ## Analyse des données
 
 Livrable Client : [Note-book Jupyter](brief_rotten_tomatoes.ipynb)
-
-![Gantt](Gestion_de_Projet/Gantt-Client.png)
 
 ## Base de données
 
