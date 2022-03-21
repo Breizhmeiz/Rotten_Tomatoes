@@ -30,6 +30,10 @@ Livrable Client : [Note-book Jupyter](brief_rotten_tomatoes.ipynb)
 
 [Structure de la base MySQL](SQL/Database/Rotten_Tomatoes_mysql.sql)
 
+Une [prodédure stockée](SQL/procedure-get_acteurs_from_film_id.sql) qui renvoie, formatée en une chaine de caractère, la liste des acteurs séparés par une virgule.
+
+[Une Vue](SQL/view-v_pilotes.sql)
+
 ### Données
 
 [Données à importer](tables/)
