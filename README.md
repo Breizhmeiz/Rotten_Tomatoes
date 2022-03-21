@@ -6,6 +6,8 @@ Brief Analyse de Données
 - Maïna Le Dem
 - Lucas Lustosa
 
+![image](https://user-images.githubusercontent.com/8625432/159278775-9716c19a-999d-4221-a3a7-9493f6ae426a.png)
+
 ## Gestion de Projet
 
 ### État d'avancement du Projet
