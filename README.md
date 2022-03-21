@@ -24,11 +24,13 @@ L'avancement du projet est suivit grâce à un tableau de Gantt, reprenant les t
 
 ### Cahier des Charges
 
-Un [cahier des Charges](Cahier_des_Caharges.pdf) Version Client, prête à être signé.
+Un [cahier des Charges](cahier_des_charges.pdf) Version Client, prêt à être signé.
 
 ## Analyse des données
 
 Livrable Client : [Note-book Jupyter](brief_rotten_tomatoes.ipynb)
+
+![Gantt](Gestion_de_Projet/Gantt-Client.png)
 
 ## Base de données
 
