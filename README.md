@@ -2,21 +2,27 @@
 
 Brief Analyse de Données
 
+- Romain Heller
+- Maïna Le Dem
+- Lucas Lustosa
+
 ## Gestion de Projet
 
 ### État d'avancement du Projet
 
+L'avancement du projet est suivit grâce à un tableau de Gantt, reprenant les tâches à réaliser et les ressources affectées.
+
 ![Tableau de Gantt](Gestion_de_Projet/Gantt-Rotten_Tomatoes.png)
 
-### Suivit financier
+[Rapport complet](Gestion_de_Projet/Gantt-Rotten_Tomatoes.pdf) à date, à destination du comité de pilotage du projet.
+
+### Suivi financier
 
 ![Budget prévisionnel](Gestion_de_Projet/Previsionnel.png)
 
 ### Cahier des Charges
 
-[Version Client](Cahier_des_Caharges.pdf)
-
-![Gantt version Client](Gestion_de_Projet/Gantt-Client.png)
+Un [cahier des Charges](Cahier_des_Caharges.pdf) Version Client, prête à être signé.
 
 ## Analyse des données
 
@@ -28,16 +34,29 @@ Livrable Client : [Note-book Jupyter](brief_rotten_tomatoes.ipynb)
 
 ![Modèle Conceptuel de Données](mcd.png)
 
-[Structure de la base MySQL](SQL/Database/Rotten_Tomatoes_mysql.sql)
-
-Une [prodédure stockée](SQL/procedure-get_acteurs_from_film_id.sql) qui renvoie, formatée en une chaine de caractère, la liste des acteurs séparés par une virgule.
-
-[Une Vue](SQL/view-v_pilotes.sql)
+- [Structure de la base MySQL](SQL/Database/Rotten_Tomatoes_mysql.sql)
+- Une [prodédure stockée](SQL/procedure-get_acteurs_from_film_id.sql) qui renvoie, formatée en une chaine de caractère, la liste des acteurs séparés par une virgule.
+- [Une Vue](SQL/view-v_pilotes.sql).
 
 ### Données
 
-[Données à importer](tables/)
+- [Données livrées](rotten_tomatoes_movies.csv) par le Client.
+- [Données traitées](tables/) à importer.
 
 ### Scripts d'imports
 
-[imports des données en python (WIP)](Import/data_importer.py)]
+- [Note-book Jupyter](brief_rotten_tomatoes.ipynb) pour l'import des données traitées.
+- [Script d'import python (WIP)](Import/data_importer.py) pour les données brutes (version de développement).
+
+## Prescriptions
+
+L'analyse de la base fournie par le client a permit de mettre en évidence des corélations qui pouraient lui permettre de vendre du conseil à des prospects :
+
+Problématiques proposées au client (préconisations, recommandations business):
+- En tant que distributeur, quel est le nombre de vues espérées pour une compagnie ?
+- En tant que compagnie, quel est le nombre de vues espérées pour un producteur ?
+- En tant que producteur, quel est le nombre de vues espérées pour un auteur ?
+- En tant que producteur, quel est le nombre de vues espérées pour un acteur ?
+- En tant que cinema, quel est le nombre de places espérées pour un film ?
+- En tant que cinema, quelle est la meilleure période pour programmer un film en fonction de sa catégorie ?
+
