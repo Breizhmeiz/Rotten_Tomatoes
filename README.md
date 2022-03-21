@@ -8,6 +8,14 @@ Brief Analyse de Données
 
 ![image](https://user-images.githubusercontent.com/8625432/159278775-9716c19a-999d-4221-a3a7-9493f6ae426a.png)
 
+## Contexte
+
+*Fandango* est une société américaine de billetterie qui vend des billets de cinéma par le biais de leur site internet ainsi que par leur application mobile.  
+
+Depuis le rachat de *Flixter* à *Warner Bross* en 2016, c’est *Fandango* qui opère sa filiale *Rotten Tomatoes* et sa base de données répertoriant les critiques de films ou de DVD. 
+
+*Fandango* aimerait pouvoir évaluer les possibilités d’exploitation de ces données afin d’en tirer d’autres sources de revenus complémentaires. 
+
 ## Gestion de Projet
 
 ### État d'avancement du Projet
